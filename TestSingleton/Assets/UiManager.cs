@@ -31,7 +31,7 @@ public class UiManager : MonoBehaviour
     {
         if (_instance == null)
         {
-            _instance = this; // 현재 GameObject의 인스턴스
+            _instance = this; // 현재 UiManager의 인스턴스
         }
         else if (_instance != this)
         {

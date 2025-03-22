@@ -4,7 +4,7 @@ public class GameManager : MonoBehaviour
 {
     // 멤버 변수: 필드(field)
     private static GameManager _instance = null; // static 의미: class의 인스턴스 생성과 관계없이 이 변수는 한번만 생성(메모리 할당)
-    public static GameManager Instance // 변수(필드) + 함수(메소드): 프로퍼티(외수 쓸 때는 변수처럼 쓰지만 내부에 구성은 메소드를 가짐)
+    public static GameManager Instance // 변수(필드) + 함수(메소드): 프로퍼티(외부에서 쓸 때는 변수처럼 쓰지만 내부의 구성은 메소드 특성을 가짐)
     {
         // get 메소드
         get
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         if (_instance == null)
         {
-            _instance = this; // 현재 GameObject의 인스턴스
+            _instance = this; // 현재 GameManager의 인스턴스
             initParam();
         }
         else if (_instance != this)
