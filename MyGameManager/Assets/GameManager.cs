@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
     //public float speed = 10.0f; // 필드; public하면 객체 지향의 철학과 동떨어짐
     public float Speed // 프로퍼티
     { get; set; }
+    public float SpeedStep
+    { get; set; }
 
     // singleton pattern: 클래스 하나에 인스턴스가 하나만 생성되는 프래그래밍 패턴
     private static GameManager _instance = null; // 멤버 변수 선언, 정의 = 필드(field) 선언 ->  외부 접근 불가(private, protected 선언)
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         initParam();
+        UiManager.Instance.showSpeed();
     }
 
     // Update is called once per frame
@@ -49,5 +52,19 @@ public class GameManager : MonoBehaviour
     void initParam()
     {
         Speed = 10.0f;
+        SpeedStep = 1.0f;
+    }
+
+    public void incSpeed()
+    {
+        Speed += SpeedStep;
+        UiManager.Instance.showSpeed();
+    }
+
+    public void decSpeed()
+    {
+        Speed -= SpeedStep;
+        if (Speed < 0.0f) { Speed = 0.0f; }
+        UiManager.Instance.showSpeed();
     }
 }
