@@ -34,5 +34,13 @@ public class CubeMove : MonoBehaviour
         Color color = UiManager.Instance.getNextColor();
         Renderer renderer = GetComponent<Renderer>();
         renderer.material.color = color;
+        Transform parentTf = transform;
+        while (parentTf.childCount > 0)
+        {
+            Transform childTf = parentTf.GetChild(0);
+            renderer = childTf.GetComponent<Renderer>();
+            renderer.material.color = color;
+            parentTf = childTf;
+        }
     }
 }
