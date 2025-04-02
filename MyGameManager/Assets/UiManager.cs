@@ -4,7 +4,8 @@ using TMPro;
 public class UiManager : MonoBehaviour
 {
     public TMP_Text textSpeed; // 필드로 선언
-
+    private Color[] colors = { Color.white, Color.red, Color.green, Color.blue, new Color(0.5f, 0.25f, 0.25f) };
+    private int tankColorIndex = 0;
     private static UiManager _instance = null;
     public static UiManager Instance
     {
@@ -44,5 +45,17 @@ public class UiManager : MonoBehaviour
     {
         string str = $"Speed = {GameManager.Instance.Speed}";
         textSpeed.text = str;
+    }
+
+    public Color indexToColor(int index)
+    {
+        return colors[index];
+    }
+
+    public Color getNextColor()
+    {
+        tankColorIndex++;
+        if (tankColorIndex >= colors.Length) tankColorIndex = 0;
+        return indexToColor(tankColorIndex);
     }
 }

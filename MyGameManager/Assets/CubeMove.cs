@@ -25,5 +25,14 @@ public class CubeMove : MonoBehaviour
         // 원칙: gameObject.transform으로 접근
         // 간략화: 그냥 transform 인스턴스로 접근; transform의 클래스는 Transform
         transform.Translate(xoff, 0.0f, zoff);
+
+        if (Input.GetKeyDown(KeyCode.R)) changeColor();
+    }
+
+    private void changeColor()
+    {
+        Color color = UiManager.Instance.getNextColor();
+        Renderer renderer = GetComponent<Renderer>();
+        renderer.material.color = color;
     }
 }
