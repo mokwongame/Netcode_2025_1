@@ -67,6 +67,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\FireGun.cs" />
+    <Compile Include="Assets\KillAmmo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

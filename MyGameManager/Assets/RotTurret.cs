@@ -18,9 +18,9 @@ public class RotTurret : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.E))
         {
-            ang = 50.0f * GameManager.Instance.RotSpeed * Time.deltaTime;
+            ang = GameManager.Instance.RotSpeed * Time.deltaTime;
         }
-        ang += Input.mouseScrollDelta.y * GameManager.Instance.RotSpeed * Time.deltaTime;
+        ang += 10.0f * Input.mouseScrollDelta.y * GameManager.Instance.RotSpeed * Time.deltaTime;
         transform.Rotate(0.0f, ang, 0.0f);
     }
 }
