@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     public float AmmoForce
     { get; set; }
 
+    public int PlayerScore
+    { get; set; }
+    public int EnemyScore
+    { get; set; }
+
     // singleton pattern: 클래스 하나에 인스턴스가 하나만 생성되는 프래그래밍 패턴
     private static GameManager _instance = null; // 멤버 변수 선언, 정의 = 필드(field) 선언 ->  외부 접근 불가(private, protected 선언)
     public static GameManager Instance // 변수 + 함수 = 필드 + 메소드 = 프로퍼티(property) -> 외부 접근을 수월하게(public 선언), 외부에서는 변수처럼 사용
@@ -59,6 +64,8 @@ public class GameManager : MonoBehaviour
         SpeedStep = 1.0f;
         RotSpeed = 30.0f;
         AmmoForce = 1000.0f;
+        PlayerScore = 0;
+        EnemyScore = 0;
     }
 
     public void incSpeed()
