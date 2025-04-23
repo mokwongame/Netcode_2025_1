@@ -16,10 +16,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public float Speed
+    { get; set; }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        initParam();
     }
 
     // Update is called once per frame
@@ -70,5 +73,17 @@ public class GameManager : MonoBehaviour
             NetworkManager.Singleton.StartClient();
             UiManager.Instance.updateNetState();
         }
+    }
+
+    public int getNumClients()
+    {
+        if (NetworkManager.Singleton == null) return 0;
+        System.Collections.Generic.IReadOnlyList<NetworkClient> connectedClients = NetworkManager.Singleton.ConnectedClientsList;
+        return connectedClients.Count;
+    }
+
+    void initParam()
+    {
+        Speed = 10.0f;
     }
 }

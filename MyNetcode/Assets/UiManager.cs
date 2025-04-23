@@ -5,6 +5,7 @@ using Unity.Netcode;
 public class UiManager : MonoBehaviour
 {
     public TMP_Text textNetState;
+    public TMP_Text textNumClients;
 
     private static UiManager _instance = null;
     public static UiManager Instance
@@ -47,5 +48,12 @@ public class UiManager : MonoBehaviour
         string isClient = (NetworkManager.Singleton.IsClient) ? "O" : "X";
         string netState = $"server: {isServer}, client: {isClient}";
         textNetState.text = netState;
+    }
+
+    public void updateNumClients()
+    {
+        int clientCount = GameManager.Instance.getNumClients();
+        string numClinets = $"# of clients: {clientCount}";
+        textNumClients.text = numClinets;
     }
 }
