@@ -4,6 +4,10 @@ public class GameManager : MonoBehaviour
 {
     public static float Speed
     { get; set; }
+    public float CameraSpeed
+    { get; set; }
+    public float BulletForce
+    { get; set; }
 
     private static GameManager _instance = null;
     public static GameManager Instance
@@ -45,5 +49,7 @@ public class GameManager : MonoBehaviour
     void initParam()
     {
         Speed = 10.0f;
+        CameraSpeed = 300.0f;
+        BulletForce = 1000.0f;
     }
 }
