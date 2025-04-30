@@ -6,6 +6,8 @@ public class UiManager : MonoBehaviour
 {
     public TMP_Text textNetState;
     public TMP_Text textNumClients;
+    public TMP_InputField inputIp;
+    public TMP_InputField inputPort;
 
     private static UiManager _instance = null;
     public static UiManager Instance
@@ -55,5 +57,21 @@ public class UiManager : MonoBehaviour
         int clientCount = GameManager.Instance.getNumClients();
         string numClinets = $"# of clients: {clientCount}";
         textNumClients.text = numClinets;
+    }
+
+    public void updateConnection()
+    {
+        string ipAddress = inputIp.text;
+        if (string.IsNullOrEmpty(ipAddress))
+        {
+            ipAddress = "127.0.0.1";
+        }
+        string port = inputPort.text;
+        if (string.IsNullOrEmpty(port))
+        {
+            port = "7777";
+        }
+        ushort portNum = ushort.Parse(port);
+        GameManager.Instance.setConnection(ipAddress, portNum);
     }
 }

@@ -1,4 +1,5 @@
 using Unity.Netcode;
+using Unity.Netcode.Transports.UTP;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         if (!NetworkManager.Singleton.IsServer && !NetworkManager.Singleton.IsClient)
         {
             Debug.Log("Host started.");
+            UiManager.Instance.updateConnection();
             NetworkManager.Singleton.StartHost();
             UiManager.Instance.updateNetState();
         }
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
         if (!NetworkManager.Singleton.IsServer && !NetworkManager.Singleton.IsClient)
         {
             Debug.Log("Server started.");
+            UiManager.Instance.updateConnection();
             NetworkManager.Singleton.StartServer();
             UiManager.Instance.updateNetState();
         }
@@ -70,6 +73,7 @@ public class GameManager : MonoBehaviour
         if (!NetworkManager.Singleton.IsServer && !NetworkManager.Singleton.IsClient)
         {
             Debug.Log("Client started.");
+            UiManager.Instance.updateConnection();
             NetworkManager.Singleton.StartClient();
             UiManager.Instance.updateNetState();
         }
@@ -80,6 +84,11 @@ public class GameManager : MonoBehaviour
         if (NetworkManager.Singleton == null) return 0;
         System.Collections.Generic.IReadOnlyList<NetworkClient> connectedClients = NetworkManager.Singleton.ConnectedClientsList;
         return connectedClients.Count;
+    }
+
+    public void setConnection(string ipAddress, ushort portNum)
+    {
+        NetworkManager.Singleton.GetComponent<UnityTransport>().SetConnectionData(ipAddress, portNum);
     }
 
     void initParam()
