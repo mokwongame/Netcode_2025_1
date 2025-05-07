@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "IP/포트 설정 추가, 카메라 회전"
+git commit -m "네트워크로 총알 쏘기 기능 추가"
 git push -u origin main

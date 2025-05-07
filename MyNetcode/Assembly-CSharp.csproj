@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MovePlayer.cs" />
+    <Compile Include="Assets\Resources\BulletNet.cs" />
     <Compile Include="Assets\RotateCamera.cs" />
     <Compile Include="Assets\UiManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />

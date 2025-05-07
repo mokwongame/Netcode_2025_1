@@ -17,8 +17,22 @@ public class MovePlayer : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsOwner) return;
+        if (!IsOwner) return; // owner가 아니면 반환(return); 그래서 아래 코드는 owner만 실행함
         move();
+        if (Input.GetKeyDown(KeyCode.Space))
+            makeBulletRpc(); // Server RPC이기 때문에 owner만 이 함수 호출해야 함
+    }
+
+    [Rpc(SendTo.Server)] // Server RPC: Spawn() 때문에 server RPC만 가능
+    private void makeBulletRpc()
+    {
+        // prefab 파일 불러오기(load): 이 파일은 Assets > Resources 폴더에 있어야 함
+        GameObject prefabFile = Resources.Load("Bullet") as GameObject;
+        // prefab의 예시 만들기(instantiate)
+        GameObject prefab = Instantiate(prefabFile);
+        prefab.transform.position = transform.position + plane.transform.forward * 2.0f + plane.transform.up * 2.0f; // transform은 플레이어의 변환
+        prefab.transform.rotation = transform.rotation;
+        prefab.GetComponent<NetworkObject>().Spawn(); // server RPC만 Spawn() 메소드 호출 가능
     }
 
     private void move()

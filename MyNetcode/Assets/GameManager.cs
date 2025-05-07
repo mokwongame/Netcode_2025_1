@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     public float Speed
     { get; set; }
 
+    public float BulletSpeed
+    { get; set; }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -94,5 +97,6 @@ public class GameManager : MonoBehaviour
     void initParam()
     {
         Speed = 10.0f;
+        BulletSpeed = 1000.0f;
     }
 }
