@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Resources\BulletNB.cs" />
     <Compile Include="Assets\MovePlayerNet.cs" />
+    <Compile Include="Assets\PlayerHealthNet.cs" />
     <Compile Include="Assets\MoveCamera.cs" />
     <Compile Include="Assets\UiManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />

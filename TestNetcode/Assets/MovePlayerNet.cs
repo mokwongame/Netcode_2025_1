@@ -43,9 +43,20 @@ public class MovePlayerNet : NetworkBehaviour
         // Network: Prefab 파일 읽기 -> GameObject인 Prefab을 Instantiate()으로 생성
         GameObject prefabFile = Resources.Load("Bullet") as GameObject; // 파일은 Assets > Resources 폴더에 저장되어야 됨
         GameObject prefab = Instantiate(prefabFile);
-        prefab.transform.position = transform.position + plane.transform.forward * 1.0f + plane.transform.up * 2.0f;
+        prefab.transform.position = transform.position + plane.transform.forward * 2.0f + plane.transform.up * 0.0f;
         prefab.transform.rotation = transform.rotation;
         // Spawn() 함수로 인해 makeBullet()의 실행은 서버에서만 해야 됨: RPC (remote procedure call); procedure는 함수; 원격 함수 호출
         prefab.GetComponent<NetworkObject>().Spawn(); // 개구리의 알 -> 알 낳기
+    }
+
+    private void OnCollisionEnter(Collision collision) // 충돌은 클라이언트가 알아서
+    {
+        string tag = collision.gameObject.tag;
+        if (tag == "Bullet") // 플레이어가 불릿과 충돌하면
+        {
+            Debug.Log("hit.");
+            //GetComponent<PlayerHealthNet>().decHealth(); // 클라이언트의 NetworkVariable 갱신에 오류가 생김
+            GetComponent<PlayerHealthNet>().decHealthRpc();
+        }
     }
 }

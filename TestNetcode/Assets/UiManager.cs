@@ -10,6 +10,7 @@ public class UiManager : MonoBehaviour
     public TMP_Text textNumClients;
     public TMP_InputField inputIp;
     public TMP_InputField inputPort;
+    public TMP_InputField inputId;
 
     private static UiManager _instance = null;
     public static UiManager Instance
@@ -103,8 +104,14 @@ public class UiManager : MonoBehaviour
         {
             sPort = "7777";
         }
-        Debug.Log($"IP address = {sIp}, port # = {sPort}");
+        string sId = inputId.text;
+        if (string.IsNullOrEmpty(sId))
+        {
+            sId = "player";
+        }
+        Debug.Log($"IP address = {sIp}, port # = {sPort}, ID = {sId}");
         ushort port = ushort.Parse(sPort); // 문자열 -> 다른 자료형: Parse()
         setConnectionData(sIp, port);
+        GameManager.Instance.UserId = sId;
     }
 }

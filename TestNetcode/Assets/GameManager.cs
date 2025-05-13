@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public float BulletForce
     { get; set; }
 
+    public string UserId
+    { get; set; }
+
     private static GameManager _instance = null;
     public static GameManager Instance
     {
@@ -51,5 +54,6 @@ public class GameManager : MonoBehaviour
         Speed = 10.0f;
         CameraSpeed = 300.0f;
         BulletForce = 1000.0f;
+        UserId = "player";
     }
 }

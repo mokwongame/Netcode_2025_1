@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1232393771159587412}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,3 +230,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1d4b3300303344293f3ef75d6c5a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  killTime: 3
