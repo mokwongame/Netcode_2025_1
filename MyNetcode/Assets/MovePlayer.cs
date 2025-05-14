@@ -54,4 +54,13 @@ public class MovePlayer : NetworkBehaviour
         pos += plane.transform.right * xoff + plane.transform.forward * zoff;
         transform.position = pos;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        string tag = collision.gameObject.tag;
+        if (tag == "Bullet")
+        {
+            Debug.Log("hit.");
+        }
+    }
 }
