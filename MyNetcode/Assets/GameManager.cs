@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     public float BulletSpeed
     { get; set; }
 
+    public string UserId
+    { get; set; }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

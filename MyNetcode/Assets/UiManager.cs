@@ -8,6 +8,7 @@ public class UiManager : MonoBehaviour
     public TMP_Text textNumClients;
     public TMP_InputField inputIp;
     public TMP_InputField inputPort;
+    public TMP_InputField inputUserId;
 
     private static UiManager _instance = null;
     public static UiManager Instance
@@ -71,7 +72,13 @@ public class UiManager : MonoBehaviour
         {
             port = "7777";
         }
+        string userId = inputUserId.text;
+        if (string.IsNullOrEmpty(userId))
+        {
+            userId = "player";
+        }
         ushort portNum = ushort.Parse(port);
         GameManager.Instance.setConnection(ipAddress, portNum);
+        GameManager.Instance.UserId = userId;
     }
 }
