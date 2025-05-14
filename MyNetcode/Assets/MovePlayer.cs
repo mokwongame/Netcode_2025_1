@@ -30,7 +30,7 @@ public class MovePlayer : NetworkBehaviour
         GameObject prefabFile = Resources.Load("Bullet") as GameObject;
         // prefab의 예시 만들기(instantiate)
         GameObject prefab = Instantiate(prefabFile);
-        prefab.transform.position = transform.position + plane.transform.forward * 2.0f + plane.transform.up * 2.0f; // transform은 플레이어의 변환
+        prefab.transform.position = transform.position + plane.transform.forward * 2.0f + plane.transform.up * 0.0f; // transform은 플레이어의 변환
         prefab.transform.rotation = transform.rotation;
         prefab.GetComponent<NetworkObject>().Spawn(); // server RPC만 Spawn() 메소드 호출 가능
     }
@@ -61,6 +61,8 @@ public class MovePlayer : NetworkBehaviour
         if (tag == "Bullet")
         {
             Debug.Log("hit.");
+            //GetComponent<PlayerHealthNet>().decHealth();
+            GetComponent<PlayerHealthNet>().decHealthRpc();
         }
     }
 }

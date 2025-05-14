@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "충돌 기능 추가"
+git commit -m "헬스 포인트를 NetworkVariable로 갱신"
 git push -u origin main
