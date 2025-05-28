@@ -13,6 +13,12 @@ public class GameManager : MonoBehaviour
     public string UserId
     { get; set; }
 
+    public float SpeedTank
+    { get; set; }
+
+    public float RotSpeedTank
+    { get; set; }
+
     private static GameManager _instance = null;
     public static GameManager Instance
     {
@@ -55,6 +61,8 @@ public class GameManager : MonoBehaviour
     void initParam()
     {
         UserNodeType = NodeType.NULL;
+        SpeedTank = 6.0f;
+        RotSpeedTank = 50.0f;
     }
 
     public int getNumClients()
