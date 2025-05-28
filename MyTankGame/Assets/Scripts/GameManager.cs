@@ -10,7 +10,10 @@ public class GameManager : MonoBehaviour
     public NodeType UserNodeType
     { get; set; }
 
-    public string UserId
+    public string UserId // 클라이언트 이름
+    { get; set; }
+
+    public int CountId // 클라이언트의 등장 순서
     { get; set; }
 
     public float SpeedTank
@@ -116,5 +119,10 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Unknown node type.");
         }
+    }
+
+    public void updateCountId()
+    {
+        CountId = getNumClients();
     }
 }
