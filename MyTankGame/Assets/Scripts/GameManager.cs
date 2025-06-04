@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     public float RotSpeedTank
     { get; set; }
 
+    public float ForceBomb // F = m*a
+    { get; set; }
+
     private static GameManager _instance = null;
     public static GameManager Instance
     {
@@ -66,6 +69,7 @@ public class GameManager : MonoBehaviour
         UserNodeType = NodeType.NULL;
         SpeedTank = 6.0f;
         RotSpeedTank = 50.0f;
+        ForceBomb = 2000.0f;
     }
 
     public int getNumClients()
