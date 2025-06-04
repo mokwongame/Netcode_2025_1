@@ -42,6 +42,7 @@ public class BombNet : NetworkBehaviour
         }
         else if (tag == "Player") // 상대방 탱크에 충돌
         {
+            collision.gameObject.GetComponent<PlayerHealthNet>().decHealthRpc();
             makeExplosionRpc();
             killBombRpc();
         }

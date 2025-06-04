@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "폭발 특수 효과 추가"
+git commit -m "네트워크 탱크 게임 완성"
 git push -u origin main
