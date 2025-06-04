@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leopard2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 18498d87574024f49b5bc8fedc9336e8, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1393916160986794733, guid: 18498d87574024f49b5bc8fedc9336e8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -260,6 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f63053afb74534abab25c9ae42e918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!114 &8641403732430369285
 MonoBehaviour:
   m_ObjectHideFlags: 0

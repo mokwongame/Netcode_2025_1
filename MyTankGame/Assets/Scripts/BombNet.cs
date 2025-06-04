@@ -30,4 +30,31 @@ public class BombNet : NetworkBehaviour
     {
         NetworkObject.Despawn(); // Despawn()은 Spawn()의 반대말: 영어의 de는 없앤다는 뜻
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // 현재 위치는 BombRed(tag = Bomb)
+        string tag = collision.gameObject.tag; // 충돌한 대상체의 tag
+        if (tag == "Plane") // 땅에 부딪힘
+        {
+            makeExplosionRpc();
+            killBombRpc();
+        }
+        else if (tag == "Player") // 상대방 탱크에 충돌
+        {
+            makeExplosionRpc();
+            killBombRpc();
+        }
+    }
+
+    [Rpc(SendTo.Server)]
+    void makeExplosionRpc()
+    {
+        GameObject prefabFile = Resources.Load("ExplosionRed") as GameObject;
+        // prefab의 예시 만들기(instantiate)
+        GameObject prefab = Instantiate(prefabFile);
+        prefab.transform.position = transform.position;
+        prefab.transform.rotation = transform.rotation;
+        prefab.GetComponent<NetworkObject>().Spawn(); // server RPC만 Spawn() 메소드 호출 가능
+    }
 }

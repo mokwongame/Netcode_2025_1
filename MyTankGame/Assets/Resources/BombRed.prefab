@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BombRed
       objectReference: {fileID: 0}
+    - target: {fileID: 1013975464649299966, guid: 568aa10983fee174ab67dd6333444d42, type: 3}
+      propertyPath: m_TagString
+      value: Bomb
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -242,3 +246,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f6ff4570dc1af4d9d4b59e3440bad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1

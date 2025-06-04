@@ -15,7 +15,7 @@ D:/NetworkProgramming_2025_1/MyTankGame
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-1408
+8412
 -job-worker-count
 5
 -background-job-worker-count
@@ -59,12 +59,12 @@ D:/NetworkProgramming_2025_1/MyTankGame
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4200]  Target information:
+Player connection [6092]  Target information:
 
-Player connection [4200]  * "[IP] 220.81.195.130 [Port] 0 [Flags] 2 [Guid] 1650806919 [EditorId] 1650806919 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1I9HFA0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [6092]  * "[IP] 220.81.195.130 [Port] 0 [Flags] 2 [Guid] 578363086 [EditorId] 578363086 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1I9HFA0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [4200] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [4200] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6092] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6092] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +76,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 153.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.40f1 (157d81624ddf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/Resources/UnitySubsystems
@@ -92,50 +92,50 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.002886 seconds.
-- Loaded All Assemblies, in  1.369 seconds
+Registered in 0.002981 seconds.
+- Loaded All Assemblies, in  0.355 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 312 ms
+Android Extension - Scanning For ADB Devices 197 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.732 seconds
-Domain Reload Profiling: 2099ms
-	BeginReloadAssembly (278ms)
+- Finished resetting the current domain, in  0.564 seconds
+Domain Reload Profiling: 917ms
+	BeginReloadAssembly (121ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (227ms)
-	RebuildNativeTypeToScriptingClass (10ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (808ms)
-		LoadAssemblies (277ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (120ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (804ms)
-			TypeCache.Refresh (803ms)
-				TypeCache.ScanAssembly (592ms)
+		AnalyzeDomain (140ms)
+			TypeCache.Refresh (138ms)
+				TypeCache.ScanAssembly (127ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (732ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (564ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (685ms)
+		SetupLoadedEditorAssemblies (520ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (435ms)
+			InitializePlatformSupportModulesInManaged (288ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (121ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (119ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -145,270 +145,323 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.786 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.718 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.333 seconds
-Domain Reload Profiling: 3117ms
-	BeginReloadAssembly (172ms)
+- Finished resetting the current domain, in  0.723 seconds
+Domain Reload Profiling: 1439ms
+	BeginReloadAssembly (156ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (1528ms)
-		LoadAssemblies (1215ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (470ms)
+		LoadAssemblies (319ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (422ms)
-			TypeCache.Refresh (343ms)
-				TypeCache.ScanAssembly (283ms)
-			BuildScriptInfoCaches (66ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1333ms)
+		AnalyzeDomain (244ms)
+			TypeCache.Refresh (182ms)
+				TypeCache.ScanAssembly (163ms)
+			BuildScriptInfoCaches (50ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (723ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (849ms)
+		SetupLoadedEditorAssemblies (568ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (106ms)
-			ProcessInitializeOnLoadAttributes (359ms)
-			ProcessInitializeOnLoadMethodAttributes (358ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (356ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 216 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6839 unused Assets / (6.8 MB). Loaded Objects now: 7502.
-Memory consumption went from 172.9 MB to 166.0 MB.
-Total: 10.856100 ms (FindLiveObjects: 0.837400 ms CreateObjectMapping: 0.980900 ms MarkObjects: 5.039900 ms  DeleteObjects: 3.996400 ms)
+Unloading 6840 unused Assets / (6.4 MB). Loaded Objects now: 7505.
+Memory consumption went from 173.2 MB to 166.8 MB.
+Total: 8.820400 ms (FindLiveObjects: 0.591400 ms CreateObjectMapping: 0.640900 ms MarkObjects: 4.252900 ms  DeleteObjects: 3.334000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1174.128359 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_26.prefab
-  artifactKey: Guid(148348498ed578e4f99da579e4facae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_26.prefab using Guid(148348498ed578e4f99da579e4facae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d1e3cc4580ff58d728b2b7fa76c9808') in 0.4737616 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+  Time since last request: 6654.344974 seconds.
+  path: Assets/Scenes/TankScene.unity
+  artifactKey: Guid(02442d07903e7af4a89972bf0f1e3a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TankScene.unity using Guid(02442d07903e7af4a89972bf0f1e3a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e35304da36c5a5f5b32fdabdbd59728d') in 0.0056074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_23.prefab
-  artifactKey: Guid(a17d57b879b1bd64b82f81a883735718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_23.prefab using Guid(a17d57b879b1bd64b82f81a883735718) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fd6006695d2d9ce70c8f27e5fa705c3') in 0.0175307 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.619 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.682 seconds
+Domain Reload Profiling: 1302ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (385ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (173ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (152ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (682ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (503ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (326ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6836 unused Assets / (6.8 MB). Loaded Objects now: 7521.
+Memory consumption went from 158.4 MB to 151.6 MB.
+Total: 8.355700 ms (FindLiveObjects: 0.638500 ms CreateObjectMapping: 0.831600 ms MarkObjects: 4.064200 ms  DeleteObjects: 2.820100 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_30.prefab
-  artifactKey: Guid(9ba343679bd1574478af5aca575fad61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_30.prefab using Guid(9ba343679bd1574478af5aca575fad61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8cf4addcec845479ea58dda46fbfd947') in 0.0139039 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.637 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.684 seconds
+Domain Reload Profiling: 1323ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (387ms)
+		LoadAssemblies (297ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (178ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (156ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (685ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (500ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (103ms)
+			ProcessInitializeOnLoadAttributes (325ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6836 unused Assets / (7.2 MB). Loaded Objects now: 7523.
+Memory consumption went from 156.8 MB to 149.6 MB.
+Total: 7.705900 ms (FindLiveObjects: 0.535000 ms CreateObjectMapping: 0.532300 ms MarkObjects: 3.664400 ms  DeleteObjects: 2.973300 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_40.prefab
-  artifactKey: Guid(03978893bdd49f74f8596eb30d7f12fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_40.prefab using Guid(03978893bdd49f74f8596eb30d7f12fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc8aa4a9f4554fd13eae5e31b3ed08a9') in 0.0150316 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6828 unused Assets / (4.2 MB). Loaded Objects now: 7523.
+Memory consumption went from 157.0 MB to 152.8 MB.
+Total: 13.164800 ms (FindLiveObjects: 0.754900 ms CreateObjectMapping: 0.834300 ms MarkObjects: 7.080800 ms  DeleteObjects: 4.492900 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_20.prefab
-  artifactKey: Guid(940f3ebd82bb29147973ff68933eda13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_20.prefab using Guid(940f3ebd82bb29147973ff68933eda13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c455901030da05859dd69cba49df405') in 0.0134167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.641 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.695 seconds
+Domain Reload Profiling: 1337ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (392ms)
+		LoadAssemblies (304ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (178ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (154ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (695ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (509ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (329ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6836 unused Assets / (6.5 MB). Loaded Objects now: 7525.
+Memory consumption went from 156.9 MB to 150.4 MB.
+Total: 11.901400 ms (FindLiveObjects: 0.725500 ms CreateObjectMapping: 0.798300 ms MarkObjects: 5.728100 ms  DeleteObjects: 4.648500 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_04.prefab
-  artifactKey: Guid(ef161ca1001004043be26692f00f1dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_04.prefab using Guid(ef161ca1001004043be26692f00f1dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '970fe52596384c09b93ee4ac8d54e9b3') in 0.015601 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.615 seconds
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.722 seconds
+Domain Reload Profiling: 1340ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (378ms)
+		LoadAssemblies (296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (144ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (722ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (515ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (329ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6836 unused Assets / (6.8 MB). Loaded Objects now: 7527.
+Memory consumption went from 156.9 MB to 150.1 MB.
+Total: 9.697000 ms (FindLiveObjects: 0.620600 ms CreateObjectMapping: 0.551100 ms MarkObjects: 4.642600 ms  DeleteObjects: 3.881300 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_27.prefab
-  artifactKey: Guid(0de97cd516c85214e83f4adb8a9cad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_27.prefab using Guid(0de97cd516c85214e83f4adb8a9cad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83c54dab14a3da84bf3b4dad7214b310') in 0.0140138 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.770 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.819 seconds
+Domain Reload Profiling: 1592ms
+	BeginReloadAssembly (208ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (484ms)
+		LoadAssemblies (363ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (193ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (820ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (616ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (403ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6836 unused Assets / (6.4 MB). Loaded Objects now: 7529.
+Memory consumption went from 157.0 MB to 150.6 MB.
+Total: 10.962700 ms (FindLiveObjects: 0.638700 ms CreateObjectMapping: 0.615600 ms MarkObjects: 5.622000 ms  DeleteObjects: 4.084400 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_10.prefab
-  artifactKey: Guid(085747d4cdf09004fa06ee78f390169e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_10.prefab using Guid(085747d4cdf09004fa06ee78f390169e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86ef6cb2b7642f72895947790146a367') in 0.0125073 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_19.prefab
-  artifactKey: Guid(65963163581c48a4a8de09388cd1076b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_19.prefab using Guid(65963163581c48a4a8de09388cd1076b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a69fbe1bedf4aec47b845cad7bb9878') in 0.0136692 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_36.prefab
-  artifactKey: Guid(ed44c7d5860f46847a271c6e51751eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_36.prefab using Guid(ed44c7d5860f46847a271c6e51751eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2e9c8a20d138ab1feb9b3b14dc2145a') in 0.0152367 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_33.prefab
-  artifactKey: Guid(05d85ba6b278c2e4f94950c326bc31fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_33.prefab using Guid(05d85ba6b278c2e4f94950c326bc31fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c2f2c084c4bb6c546d4fdfa3ff6b15c') in 0.0147235 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_22.prefab
-  artifactKey: Guid(1c0fa567a73d54948b34b15d94a86caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_22.prefab using Guid(1c0fa567a73d54948b34b15d94a86caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2abc9326a1104339500dfb464e124201') in 0.0134843 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_38.prefab
-  artifactKey: Guid(1b6c7e9bad2c31647a75a175ccebdf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_38.prefab using Guid(1b6c7e9bad2c31647a75a175ccebdf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '583971485a5ddf588a1a0338d295b62c') in 0.0154363 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_07.prefab
-  artifactKey: Guid(896c85e80e2cb0644b20291ba8f1faa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BTM_Assets/BTM_Rockets_Missiles_Bombs/Prefabs/Blue/RMB_07.prefab using Guid(896c85e80e2cb0644b20291ba8f1faa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70dcf8993ec6eb173cbfd28df5f7a48c') in 0.0152007 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 228.863502 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Battle_Effect_Green.prefab
-  artifactKey: Guid(fcfc3df8194a1044ebb8fcd0a6bc5be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Battle_Effect_Green.prefab using Guid(fcfc3df8194a1044ebb8fcd0a6bc5be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ec833e3990b72a13bd76ffa62bb05ba') in 0.061176 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Bomb_Green.prefab
-  artifactKey: Guid(6c3f332676c9b7146a16b045cf9a680a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Bomb_Green.prefab using Guid(6c3f332676c9b7146a16b045cf9a680a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93bc0e56fca378a3610c8e06548375e6') in 0.0328963 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 48
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_3_Skull_Yellow.prefab
-  artifactKey: Guid(286aeb44d763d664ba22fff60e040c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_3_Skull_Yellow.prefab using Guid(286aeb44d763d664ba22fff60e040c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6657d39dd906e0668d1f1383f8f89297') in 0.035546 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_1_Woa_Yellow.prefab
-  artifactKey: Guid(304da8401b8ea6849b9f5f96f0f6eb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_1_Woa_Yellow.prefab using Guid(304da8401b8ea6849b9f5f96f0f6eb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50a5bb7105cf02c5ea649c88d2e38c2a') in 0.0166925 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Skull_Blue.prefab
-  artifactKey: Guid(7a4dafba55b072242922877df48ee59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Skull_Blue.prefab using Guid(7a4dafba55b072242922877df48ee59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b7e2778743d32476b4733a501666242') in 0.0222906 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_3_Skull_Purple.prefab
-  artifactKey: Guid(84d71e12a413ef547a148cc2cfa5eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_3_Skull_Purple.prefab using Guid(84d71e12a413ef547a148cc2cfa5eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca114955b2e1541c3f1ea08375dea085') in 0.0178123 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Woa_Yellow.prefab
-  artifactKey: Guid(363e28624da9f7e47a10cf1530b83692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Woa_Yellow.prefab using Guid(363e28624da9f7e47a10cf1530b83692) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9db13d4f4056d32910303262b874398') in 0.0216895 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Battle_Effect_Yellow.prefab
-  artifactKey: Guid(d1dcc4bfbc6000944b2cfb0dd422a8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Battle_Effect_Yellow.prefab using Guid(d1dcc4bfbc6000944b2cfb0dd422a8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3f4aa1a49e4bd8478296b8d3358aea4') in 0.0204986 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Zap.prefab
-  artifactKey: Guid(b7e5061752aa1fa48b86d205d34abf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Zap.prefab using Guid(b7e5061752aa1fa48b86d205d34abf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86fb8a94a6f426cb9681bc0a80429879') in 0.0150626 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Skull_Red.prefab
-  artifactKey: Guid(513099c3c135b01439895582ca4ec420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Skull_Red.prefab using Guid(513099c3c135b01439895582ca4ec420) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '537b88cb4403c91d71376156ecb6819e') in 0.0150512 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Bomb_Red.prefab
-  artifactKey: Guid(152689d6752175f4fa353ae19681fb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_2_Bomb_Red.prefab using Guid(152689d6752175f4fa353ae19681fb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '627e3e754f4675e6aa44c7d118f7f6d9') in 0.016321 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 48
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_1_Bam.prefab
-  artifactKey: Guid(0b493b97a8e419d46903c1b023460740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_1_Bam.prefab using Guid(0b493b97a8e419d46903c1b023460740) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8dc618fd2681af727f4cc6a1fce94f96') in 0.0153582 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_3_Skull_Green.prefab
-  artifactKey: Guid(0302d9ba763f05f44a876c6dca82b155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonVFX9x/Comic_FX/Prefabs/Explosion_3_Skull_Green.prefab using Guid(0302d9ba763f05f44a876c6dca82b155) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ef726de803bf6932020675164968904') in 0.0161259 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Prepare: number of updated asset objects reloaded= 0

@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "탱크의 포탄 발사 추가"
+git commit -m "폭발 특수 효과 추가"
 git push -u origin main
